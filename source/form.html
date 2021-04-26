@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <div class="page__wrapper">
+      <header class="page-header">
+        <div class="page-header__logo">
+          <a class="page-header__link">
+            <img class="page-header__logo-img" src="img/logotype-mobile.svg" width="101.7" height="84" alt="Логотип сайта городка SEDONA">
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <button class="main-navigation__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-navigation__wrapper">
+            <ul class="main-navigation__list">
+              <li class="main-navigation__item">
+                <a class="main-navigation__link">Главная</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="form.html">Форма отзыва</a>
+              </li>
+              <li class="main-navigation__item">
+                <a class="main-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="main-page">
+        <section class="welcome-block-catalog">
+          <h1 class="visually-hidden">Welcome to the gorgeus</h1>
+          <img class="welcome-block-catalog__text" src="img/sedona-title-form.svg" width="229" height="39" alt="SEDONA">
+        </section>
+        <section class="main-desc-catalog">
+          <div class="main-desc-catalog__text">
+            <h2 class="title main-desc-catalog__title">Оставьте свой отзыв</h2>
+            <p class="main-desc-catalog__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+        </section>
+        <form class="main-page__form form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="user-data form__item">
+            <legend class="user-data__title legend__caption">Представьтесь:</legend>
+              <div class="user-data__item">
+                <label class="user-data__item-label">
+                  <span class="user-data__label">Имя*:</span>
+                  <input class="user-data__input" type="text" name="name" placeholder="Петр" required>
+                </label>
+              </div>
+              <div class="user-data__item">
+                <label class="user-data__item-label">
+                  <span class="user-data__label">Фамилия*:</span>
+                  <input class="user-data__input" type="text" name="surname" placeholder="Иванов" required>
+                </label>
+              </div>
+              <div class="user-data__item">
+                <label class="user-data__item-label">
+                  <span class="user-data__label">Отчество:</span>
+                  <input class="user-data__input" type="text" name="patronymic" placeholder="Александрович">
+                </label>
+              </div>
+          </fieldset>
+          <fieldset class="user-contacts form__item">
+            <legend class="user-contacts__title legend__caption">Контактная информация:</legend>
+            <div class="user-contacts__item">
+              <label class="user-contacts__item-label">
+                <span class="user-contacts__label">Контактный телефон*:</span>
+                <input class="user-contacts__input user-contacts__input--tel" type="tel" name="phone" placeholder="Введите телефон" required>
+              </label>
+            </div>
+            <div class="user-contacts__item">
+              <label class="user-contacts__item-label">
+                <span class="user-contacts__label">Электронная почта*:</span>
+                <input class="user-contacts__input user-contacts__input--email" type="email" name="email" placeholder="Введите e-mail" required>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="impress form__item">
+            <legend class="impress__title legend__caption">Ваше общее впечатление:</legend>
+            <div class="impress__feedback">
+              <label class="impress__feedback-label">
+                <input class="impress__input-radio impress__input-radio--checked" type="radio" name="result" value="positive" checked>
+                <span class="impress__radio-label">Скорее положительное</span>
+              </label>
+            </div>
+            <div class="impress__feedback">
+              <label class="impress__feedback-label">
+                <input class="impress__input-radio" type="radio" name="result" value="negative">
+                <span class="impress__radio-label">Скорее отрицательное</span>
+              </label>
+            </div>
+            <div class="impress__feedback">
+              <label class="impress__feedback-label">
+                <input class="impress__input-radio" type="radio" name="result" value="difficult">
+                <span class="impress__radio-label">Затрудняюсь ответить</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="attractions form__item">
+            <legend class="attractions__title legend__caption">Посещенные достопримечательности:</legend>
+            <div class="attractions__visited">
+              <label class="attractions__visited-label">
+                <input class="attractions__input-checkbox attractions__input-checkbox--checked" type="checkbox" name="bridge" checked>
+                <span class="attractions__checkbox-label">Мост Дьявола</span>
+              </label>
+            </div>
+            <div class="attractions__visited">
+              <label class="attractions__visited-label">
+                <input class="attractions__input-checkbox attractions__input-checkbox--checked" type="checkbox" name="bell-rock" checked>
+                <span class="attractions__checkbox-label">Гора-Колокол</span>
+              </label>
+            </div>
+            <div class="attractions__visited">
+              <label class="attractions__visited-label">
+                <input class="attractions__input-checkbox attractions__input-checkbox--checked" type="checkbox" name="park" checked>
+                <span class="attractions__checkbox-label">Слайд-парк</span>
+              </label>
+            </div>
+            <div class="attractions__visited">
+              <label class="attractions__visited-label">
+                <input class="attractions__input-checkbox attractions__input-checkbox--checked" type="checkbox" name="red-rocks">
+                <span class="attractions__checkbox-label">Красные скалы</span>
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="comments form__item">
+            <legend class="comments__title legend__caption">Опишите свои эмоции:</legend>
+            <div class="comments__item">
+              <label class="visually-hidden">Ваши эмоции:
+                <textarea class="comments__textarea" name="comments" placeholder="Опишите подробно все свои восторги "></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <button class="button form__button" type="submit">Отправить отзыв</button>
+          <p class="visually-hidden form__requared">* - Обязательные поля</p>
+        </form>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <p class="page-footer__label">#visitsedona</p>
+          <section class="page-footer__social">
+            <h3 class="visually-hidden">Социальные сети</h3>
+            <ul class="page-footer__social-list social-list">
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">
+                  <span class="visually-hidden">Твиттер</span>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
+                  <span class="visually-hidden">Фейсбук</span>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" target="_blank">
+                  <span class="visually-hidden">Ютуб</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="page-footer__copyright copyright">
+            <h3 class="visually-hidden">Разработчики сайта</h3>
+            <p class="copyright__description">Разработано</p>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img src="img/htmlacademy.svg.svg" alt="Логотип HTMLAcademy" width="26.9" height="34.1">
+            </a>
+          </section>
+        </div>
+      </footer>
+      <section class="popup popup--error">
+        <div class="popup__content">
+          <h2 class="popup__title">Что-то пошло не так!</h2>
+          <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        </div>
+        <button class="button popup__button popup__button--ok" aria-label="Закрыть" type="button">Ок</button>
+      </section>
+      <section class="popup popup--send">
+        <div class="popup__content">
+          <h2 class="popup__title">Ваш отзыв отправлен!</h2>
+          <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <button class="button popup__button" aria-label="Закрыть" type="button">Закрыть окно</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
