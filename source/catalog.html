@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a class="page-header__link">
+          <img class="page-header__logo-img" src="img/logotype-mobile.svg" width="102" height="84" alt="Логотип сайта городка SEDONA">
+        </a>
+      </div>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list">
+            <li class="main-navigation__item">
+              <a class="main-navigation__link">Главная</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-navigation__item">
+              <a class="main-navigation__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-page">
+      <section class="welcome-block-catalog">
+        <h1 class="visually-hidden">Welcome to the gorgeus</h1>
+        <img class="welcome-block-catalog__text" src="img/sedona-title-form.svg" width="229" height="39" alt="SEDONA">
+      </section>
+      <section class="main-desc-catalog">
+        <div class="main-desc-catalog__text">
+          <h2 class="title main-desc-catalog__title">Фото и видео</h2>
+          <p class="main-desc-catalog__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+      </section>
+      <section class="gallery main-page__gallery">
+        <h2 class="visually-hidden">Фото галерея</h2>
+        <ul class="gallery__list pictures">
+          <li class="pictures__item picture">
+            <figure class="picture__content">
+              <img class="picture__image" src="img/open-spaces-mobile.jpg" width="280" height="280" alt="Дорога на закате">
+              <figcaption class="picture__caption">Неродные просторы<br>
+                <p class="picture__author">Автор фото: Борис</p>
+                <p class="picture__likes">1350</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="pictures__item picture">
+            <figure class="picture__content">
+              <img class="picture__image" src="img/plants-mobile.jpg" width="280" height="280" alt="Растительность">
+              <figcaption class="picture__caption">Местная растительность<br>
+                <p class="picture__author">Автор фото: Сергей</p>
+                <p class="picture__likes">143</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="pictures__item picture">
+            <figure class="picture__content">
+              <img class="picture__image" src="img/north-road-mobile.jpg" width="280" height="280" alt="Изгиб дороги через лес">
+              <figcaption class="picture__caption">Дорога на север<br>
+                <p class="picture__author">Автор фото: Петр</p>
+                <p class="picture__likes">96</p>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="pictures__item picture">
+            <figure class="picture__content">
+              <img class="picture__image" src="img/photo-bridge-mobile.jpg" width="280" height="280" alt="Вид на Мост дьявола">
+              <figcaption class="picture__caption">Мост дьявола<br>
+                <p class="picture__author">Автор фото: Антон</p>
+                <p class="picture__likes">254</p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <section class="main-page__video-review video-review">
+        <h2 class="title video-review__title">Вы еще сомневаетесь?</h2>
+        <p class="video-review__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <img class="video-review__video" src="img/video-mobile.jpg" alt="Видео обзор">
+        <video controls poster="img/video-mobile.jpg" width="320" height="201">
+          <source src="#" type="video/mp4">
+          <source src="#" type="video/ogg">
+          <source src="#" type="video/webm">
+        </video>
+        <!-- Мы вставляем видео или только фото? -->
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="page-footer__label">#visitsedona</p>
+        <section class="page-footer__social">
+          <h3 class="visually-hidden">Социальные сети</h3>
+          <ul class="page-footer__social-list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--twitter" href="https://twitter.com/htmlacademy_ru" target="_blank">
+                <span class="visually-hidden">Твиттер</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/channel/UChUxTMjJGo-JDRY8pNTGL2g" target="_blank">
+                <span class="visually-hidden">Ютуб</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="page-footer__copyright copyright">
+          <h3 class="visually-hidden">Разработчики сайта</h3>
+          <p class="copyright__description">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="img/htmlacademy.svg.svg" alt="Логотип HTMLAcademy" width="27" height="34">
+          </a>
+        </section>
+      </div>
+    </footer>
